@@ -1,0 +1,14 @@
+import java.util.Scanner;
+//在显示端对数字进行输入，并输出它们俩的和，在此注意需要循环输入
+public class HE {
+   public static void main(String[] args){
+	   Scanner scanner=new Scanner(System.in);//java中无scanf输入函数，只能用此语句来替换
+	   while(scanner.hasNext()){
+		 int a=scanner.nextInt();//scanner对象.next函数类型就是用来进行对输入的数字的类型固定
+		 int b=scanner.nextInt();
+		 int c=a+b;
+		 System.out.println(c);
+		   
+		   
+	   }
+   }
