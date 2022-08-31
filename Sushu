@@ -1,0 +1,59 @@
+import java.util.Scanner;
+public class Sushu {
+     public static void  main(String args[]){
+    	 Scanner scan=new Scanner(System.in);
+    	 while(scan.hasNext()){
+    	 int j=scan.nextInt();
+    	 int count=0;
+    	 for(int i=2;i<j;i++){
+    		 for(int k=1;k<j;k++){
+    		if(i%k==0){
+    			count++;
+    		}	 
+    		
+    		 }
+    		 if(count==2){
+         		System.out.println(i);
+         	
+         	}
+    			count=0;//别忘了每次把count的值重置不然一直等于2
+    	 }
+    	 
+    	 }
+     }
+
+}
+//题目描述
+/*用筛法求之N内的素数。
+输入格式
+N
+输出格式
+0～N的素数
+样例输入
+100
+样例输出
+2
+3
+5
+7
+11
+13
+17
+19
+23
+29
+31
+37
+41
+43
+47
+53
+59
+61
+67
+71
+73
+79
+83
+89
+97*/
