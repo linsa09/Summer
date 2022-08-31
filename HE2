@@ -1,0 +1,30 @@
+import java.util.Scanner;
+
+public class He3 {
+
+	/*题目要求
+	 * Input contains multiple test cases. Each test case contains a pair of integers a and b, one pair of integers per line. A test case containing 0 0 terminates the input and this test case is not to be processed.
+	 * 
+	 * 样例输入
+1 5
+10 20
+0 0
+样例输出
+6
+30
+ */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner scanner=new Scanner(System.in);//java中无scanf输入函数，只能用此语句来替换
+		   while(scanner.hasNext()){
+			 int a=scanner.nextInt();//scanner对象.next函数类型就是用来进行对输入的数字的类型固定
+			 int b=scanner.nextInt();
+			 if(a==0&&b==0){
+				 break;}//不输出 0 0和让代码终止是两回事
+			 int c=a+b;
+			 System.out.println(c);
+			}
+			 
+			   
+		   }
+		   }
