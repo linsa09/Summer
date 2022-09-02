@@ -1,0 +1,54 @@
+import java.util.Scanner;
+public class Oushuqiuhe {
+  
+	public static void main(String[] args) {
+	Scanner scan=new Scanner(System.in);
+	int n=scan.nextInt();
+	int m=scan.nextInt();
+	while(scan.hasNext()){
+	int arr[]=new int[n];
+	int arr1[]=new int[m];
+	int sum=0;
+	for(int i=1;i<n;i++){
+		arr[0]=2;
+		arr[i]=arr[i-1]+2;
+	   sum=2+arr[i]+sum;
+	}
+	if(n%m==0){
+	int d=n/m;
+	int sum1=0;
+	int avg=0;
+	for(int j=1;j<d+1;j++){
+		for(int i=m*(j-1);i<m*j;i++){
+			arr1[i/m]=arr[i];
+			sum1=arr1[i/m]+sum1;
+		}
+		avg=sum1/m;
+		System.out.print(avg);
+	}
+	
+	}
+	else if(n%m!=0){
+		int d=n%m;
+		int e=(n-d)/m;
+		int sum1=0;
+		int avg=0;
+		int j=1;
+		if(j<e+1){
+			for(int i=m*(j-1);i<m*j;i++){
+				arr1[i/m]=arr[i];
+				sum1=arr1[i/m]+sum1;
+			}
+			avg=sum1/m;
+			System.out.print(avg);
+             j++;
+	}
+		else if(j>e+1){
+			System.out.print(sum/n);
+
+			
+		}
+	}
+}
+}
+}
