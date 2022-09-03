@@ -1,0 +1,26 @@
+import java.util.Scanner;
+public class XiaoChu{
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        String s=sc.nextLine();
+        while(sc.hasNextLine()){
+            boolean f=s.contains("ACM");
+          while(f){
+              int a=s.indexOf("ACM");
+              if(a!=-1){
+            	  if(s.equals("ACM")){
+                      System.out.println("YES");
+                  }
+               s=s.substring(0,a)+s.substring(a+3,s.length()-1);
+               if(s.length()==0){
+                   System.out.println("YES");
+               }
+              
+              }
+          }
+            if(f==false) { System.out.println("NO"); }
+       
+    }
+    
+    } 
+}
