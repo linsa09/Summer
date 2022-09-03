@@ -1,0 +1,44 @@
+import java.util.Scanner;
+public class TuoZi{
+	public static void main(String[] args) {
+	 Scanner scan=new Scanner(System.in);
+		  int T=scan.nextInt();
+        String arr[]={" ","Yakk","Doh","Seh","Ghar","Bang","Sheesh"};
+   	  while(scan.hasNextLine()){
+          for(int i=1;i<=T;i++){
+        	  int a=scan.nextInt();
+        	  int b=scan.nextInt();
+              if(a==b){
+   if(a==1)  System.out.println("Case "+i+":"+"Habb Yakk");
+                
+   else if(a==2)  System.out.println("Case "+i+":"+"Dobara");
+                 
+   else if(a==3)  System.out.println("Case "+i+":"+"Dousa");
+              
+   else  if(a==4)  System.out.println("Case "+i+":"+"Dorgy");
+               
+   else if(a==5)  System.out.println("Case "+i+":"+"Dabash");
+              
+   else if(a==6)  System.out.println("Case "+i+":"+"Dosh");
+       
+ 
+  }
+              
+              else if(a==5&&b==6){
+                  System.out.println("Case "+i+":"+"SheeshBeesh");
+              }
+              else if(a==6&&b==5){
+                  System.out.println("Case "+i+":"+"SheeshBeesh");
+              }
+              else {
+                  if(a>b) System.out.println("Case "+i+":"+arr[a]+" "+arr[b]);
+                  else if(a<b)  System.out.println("Case "+i+":"+arr[b]+" "+arr[a]);
+              }
+              
+          }
+   	  
+   	  
+   	  }
+	}
+
+}
