@@ -1,0 +1,28 @@
+
+
+
+	import java.util.*;
+	public class DaXie {
+	    public static void main(String[] args){
+	        Scanner sc=new Scanner(System.in);
+	        while(sc.hasNextLine()){
+	        String s=sc.nextLine();
+	       StringTokenizer st=new StringTokenizer(s," ");
+	        String a[]=new String[st.countTokens()];
+	         String b=null;
+	        while(st.hasMoreTokens()){
+	            for(int i=0;i<st.countTokens();i++){
+	             a[i]=st.nextToken();
+	            a[i]=a[i].substring(0,1).toUpperCase()+a[i].substring(1);
+	              b=b+" "+a[i];
+	            }
+	           
+	        }
+	        System.out.println(b.substring(5));
+
+	        }   
+	      
+	    }
+
+	    
+	}
