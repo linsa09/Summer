@@ -1,0 +1,53 @@
+  import java.util.*;
+public class PaiXu {
+	   public int[] StringToInt(String[] arr){
+           int[] array = new int[arr.length];
+           for (int i = 0; i < arr.length; i++) {
+               array[i] = Integer.parseInt(arr[i]);
+           }
+           return array;
+       }
+
+	public static void main(String[] args) {
+		Scanner scan=new Scanner(System.in);
+		int C=scan.nextInt();
+		int N=scan.nextInt();
+		int ci =0;
+		int pi =0; 
+		int ti =0;
+		int ri=0;
+		String word[][]=new String[N][N];
+		int[] time=new int[N];
+       while(scan.hasNextLine()){
+    	   for(int j=0;j<N;j++){
+    	  String s1=scan.nextLine();
+    	  String regex="\\s{1}";
+    	 word[j]=s1.split(regex);
+    	    if(word[N-1].equals("0")){
+    	    int t=Integer.parseInt(word[2]);
+    	    t=t+1200;
+    	    word[2]=String.valueOf(t);
+    	      }
+    	     
+    	   }
+    	   
+       }
+    for(int k=0;k<N;k++){
+    	if(ri[k]<ri[k+1]){
+         max=ri[k];
+    	}
+    	else max=ri[k+1];
+    	
+    }
+       
+       
+       
+       
+       
+       
+       
+       
+       
+	}
+
+}
