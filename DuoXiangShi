@@ -1,0 +1,33 @@
+import java.util.*;
+import java.lang.*;
+public class DuoXiangShi {
+	  public static void main(String[] args){
+	   Scanner scan=new Scanner(System.in);
+	      while(scan.hasNext()){
+	   String s=scan.nextLine();
+	   int b=scan.nextInt();
+	   String regex=", ";
+	   String a[]=s.split(regex);
+	   int sum=0;
+	   int g[]=new int[a.length];
+	   for(int i=0;i<a.length;i++){
+	      g[i]=Integer.parseInt(a[i]);
+	      int d=(int)Math.pow(b, i);//要导入java.lang包运用数学函数，来求b^i次方，但是Math.pow方法返回的是double需要强制转化
+	      sum=sum+g[i]*(d);
+	    
+	   
+	   }
+	   System.out.println(sum);
+	      }
+	  
+	  
+	  
+	  
+	  
+	  }
+
+
+
+
+	}
+
